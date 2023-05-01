@@ -1,5 +1,5 @@
 ('/Users/maileano/Documents/3rd '
- 'Year/3202N/Exercise/Exercise/build/main/PYZ-00.pyz',
+ 'Year/3202N/automata-theory/PA_01/build/main/PYZ-00.pyz',
  [('_compat_pickle',
    '/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/_compat_pickle.py',
    'PYMODULE'),

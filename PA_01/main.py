@@ -110,21 +110,21 @@ class MyGUI:
     def clearWords(self):
         self.textbox1.delete('1.0', tk.END)
     
-    def clearWords1(self):
-        self.textbox2.delete('1.0', tk.END)
+    # def clearWords1(self):
+    #     self.textbox2.delete('1.0', tk.END)
         
     
-    def checkEven(self):
-        s = self.textbox2.get('1.0', tk.END)
-        count_a = 0
-        count_b = 0
-        for c in s:
-            if c == 'a':
-                count_a += 1
-            elif c == 'b':
-                count_b += 1
-        if count_a % 2 == 0 and count_b % 2 == 1:
-            messagebox.showinfo(title="Result", message="Pass")
-        else:
-            messagebox.showinfo(title="Result", message="Fail")
+    # def checkEven(self):
+    #     s = self.textbox2.get('1.0', tk.END)
+    #     count_a = 0
+    #     count_b = 0
+    #     for c in s:
+    #         if c == 'a':
+    #             count_a += 1
+    #         elif c == 'b':
+    #             count_b += 1
+    #     if count_a % 2 == 0 and count_b % 2 == 1:
+    #         messagebox.showinfo(title="Result", message="Pass")
+    #     else:
+    #         messagebox.showinfo(title="Result", message="Fail")
 MyGUI()
