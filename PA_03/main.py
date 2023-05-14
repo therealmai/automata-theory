@@ -73,14 +73,17 @@ class MyGUI:
                     b_count += 1
                 elif stringInput[i] == 'c':
                     c_count += 1
-                else:
-                    messagebox.showinfo(title="Result", message="Fail")  # If any other character is found in the string, it is not in L
-                if b_count > a_count or c_count > b_count:
-                    messagebox.showinfo(title="Result", message="Fail")  # If b or c comes before a or b respectively, it is not in L
+            print(a_count)
+            print(b_count)
+            print(c_count)
+            
             if a_count == b_count and b_count == c_count:
-                messagebox.showinfo(title="Result", message="Pass")
+                messagebox.showinfo(title="Error", message="Yes")
+                return 'YES'
             else:
-                messagebox.showinfo(title="Result", message="Fail")
+                messagebox.showinfo(title="Error", message="No")
+                return 'NO'
+             
     
     def clearWords1(self):
         self.textbox2.delete('1.0', tk.END)
